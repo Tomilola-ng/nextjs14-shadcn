@@ -8,16 +8,7 @@ export const useAuth = () => {
     const access = getCookie("access");
     if (!access) return null;
 
-    const response = (()())
-
-    if (response.error) {
-      console.log(response.error);
-      return null;
-    } else if (response.data) {
-      setUser(response.data);
-      return response.data;
-    }
-
+    // TODO: call API to get user
     return null;
   };
 
